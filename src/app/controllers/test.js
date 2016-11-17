@@ -2,7 +2,7 @@ import TestModel from 'app/models/test';
 
 class Test {
 	static get(req, res) {
-		console.log(req);
+		console.log(req.body);
 		let test = new TestModel({
 			name: 'asd',
 			surname: '123123'
@@ -12,7 +12,7 @@ class Test {
 			.then(() => {
 				console.log('test created')
 			});
-		res.json(123);
+		res.json(req.body);
 	}
 }
 

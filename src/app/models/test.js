@@ -9,6 +9,4 @@ const testSchema = new Schema(
 	}
 );
 
-const Test = mongoose.model('Test', testSchema);
-
-export default Test;
+export default mongoose.model('Test', testSchema);

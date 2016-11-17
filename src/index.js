@@ -7,6 +7,6 @@ dotEnv.load();
 db()
 	.then(() => {
 		app.listen(process.env.PORT || process.env.APP_PORT, function() {
-			console.log('Example app listening on port 3000!')
+			console.log('API listening on port 3000!')
 		});
 	});
